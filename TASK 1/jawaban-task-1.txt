@@ -1,0 +1,19 @@
+1. Jelaskan apa itu DBT !
+DBT (Data Build Tool) adalah alat yang membantu analisis data dengan cara memudahkan transformasi data di dalam gudang data. DBT memungkinkan analis dan ilmuwan data untuk menulis transformasi data dalam SQL, 
+kemudian menjalankan dan mengelola transformasi tersebut sebagai bagian dari alur kerja yang teratur.
+
+2. Apa keuntungan menggunakan DBT ?
+a. Kemudahan Penggunaan dengan SQL : DBT memungkinkan transformasi data ditulis dalam SQL, bahasa yang sudah dikenal oleh banyak analis data dan ilmuwan data. Hal ini mempermudah adopsi dan penggunaan alat 
+ini tanpa perlu mempelajari bahasa pemrograman baru.
+b. Modularisasi dan Reusabilitas: DBT mendorong pemisahan transformasi data ke dalam model-model yang modular dan dapat digunakan kembali. Hal ini membantu dalam mengurangi duplikasi kode dan mempermudah 
+pemeliharaan serta pengembangan proyek data.
+c. Manajemen Dependensi: DBT secara otomatis mengelola dependensi antara model-model yang berbeda. Ini memastikan bahwa model dieksekusi dalam urutan yang benar, berdasarkan dependensi mereka, sehingga 
+transformasi data selalu konsisten dan akurat.
+d. Versi Kontrol dan Kolaborasi: DBT terintegrasi dengan sistem kontrol versi seperti Git, memungkinkan tim untuk melacak perubahan, melakukan review kode, dan berkolaborasi secara lebih efektif. 
+Ini juga membantu dalam memastikan auditabilitas dan rollback perubahan jika terjadi kesalahan.
+
+3. Jelaskan dependency tree dan versioning pada DBT !
+- Dependency Tree dalam DBT mengacu pada struktur hirarkis yang menggambarkan hubungan dependensi antar model atau tabel dalam proyek DBT. Setiap model dalam DBT dapat memiliki satu atau lebih model lain yang 
+bergantung padanya, dan dependency tree ini membantu mengatur urutan eksekusi transformasi data.
+- Versioning dalam DBT mengacu pada praktik mengelola dan melacak perubahan dalam proyek DBT menggunakan sistem kontrol versi seperti Git. Versioning membantu memastikan bahwa perubahan dapat dilacak, di-review, 
+dan di-revert jika diperlukan.
